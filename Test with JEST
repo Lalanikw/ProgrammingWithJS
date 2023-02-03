@@ -1,0 +1,10 @@
+Types of testing: e2e (end to end type testing, time consuming and expensive), integration (testing with connecting peices of the code), Unit (test at the smallest level, example: functions).
+JavaScript LANG doesn't have a builtIn testing capability. For JavaScript, testing frameworks such as "JEST" can be used. JEST, built by Meta, JavaScript based, libraries maintain by Meta and the community.  
+JEST can be used to test other frameworks such as Babel, TypeScript, Node, Angular and Vue. 
+Steps: Install, node, npm and JEST est. Check node --version, npm --version and JEST --version for existance locally. 
+If NODE.js and NPM installation needed; visit https://nodejs.org and download the latest version. 
+To add a JSON file, run npm init -y in the commandline. package.JSON file is the way to track on the node modules that the test depends on. 
+To use JEST in the project, need to run npm install --save-dev JEST to use the framework locally. package.JSON file will be updated with additional test libraries. Node_modules will carry all the related files. 
+In the package.JSON file, add "JEST" as the test under scripts. "scripts":{"test":"jest"}
+Define the test and expected output in js file. For clarity, can have a test.js file for testing purpose. 
+Run npm run test in the commandline, it will run JEST command which mean JEST runs tests for code in the current project to verify the expected output. 
